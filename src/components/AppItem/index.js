@@ -28,11 +28,15 @@ class AppItem extends Component {
                 type="text"
                 className="input"
                 value={editableText}
-                onChange={this.onClickButton}
+                onChange={this.onChangeEditableText}
               />
             )}
 
-            <button type="button" onClick={this.onClickButton}>
+            <button
+              type="button"
+              onClick={this.onClickButton}
+              className={EditSaveButton}
+            >
               {EditSaveButton}
             </button>
           </div>
